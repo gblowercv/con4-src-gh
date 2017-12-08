@@ -24,3 +24,5 @@ the user can put into the terminal.
 - For my project you're going to want install the "highline/import" gem
   - "gem install highline"
 - you can play the game by using the command "ruby connect4.rb"
+
+Login
