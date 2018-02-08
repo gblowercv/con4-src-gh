@@ -8,4 +8,4 @@ pipelines:
         - pwd
     - step:
         script: 
-        - ant ./java/connectfour/build.xml
+        - ant con4-src/java/connectfour/build.xml
