@@ -7,4 +7,5 @@ pipelines:
         script: 
         - pwd
         - ant --version
-        - ant $BITBUCKET_CLONE_DIR/java/connectfour/build.xml
+        - cd $BITBUCKET_CLONE_DIR/java/connectfour
+        - ant build.xml
