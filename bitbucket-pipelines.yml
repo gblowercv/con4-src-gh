@@ -5,8 +5,5 @@ pipelines:
   default:
     - step:
         script: 
-        - ant -version
-        - ls -la $BITBUCKET_CLONE_DIR/java/connectfour
         - cd $BITBUCKET_CLONE_DIR/java/connectfour
-        - pwd
-        - ant build.xml
+        - ant -buildfile build.xml
