@@ -1,11 +1,10 @@
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: frekele/ant
+image: frekele/ant:latest
 
 pipelines:
   default:
     - step:
         script: 
         - pwd
-    - step:
-        script: 
-        - ant con4-src/java/connectfour/build.xml
+        - ant --version
+        - ant $BITBUCKET_CLONE_DIR/java/connectfour/build.xml
