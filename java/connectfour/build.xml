@@ -35,7 +35,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  ****************************************************************************-->
 <project name="connectfour" default="all">
-    <target name="all" depends="clean, compile, test, jar"/>
+    <target name="all" depends="clean, compile, sleep, test, jar"/>
 
     <target name="clean">
         <delete dir="target" quiet="true" />
